@@ -29,9 +29,11 @@ def menu():
 
 
 def mostrar_contatos(lista):
-  
-  for i, contato  in enumerate (lista, start=1):
-    print(f"{i} - {contato}")
+  if not lista :
+      print("Nenhum Contato foi cadastrado!!!!")
+  else:
+    for i, contato  in enumerate (lista, start=1):
+           print(f"{i} - {contato}")
 
 
 
